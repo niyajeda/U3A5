@@ -14,6 +14,15 @@ public class TransportAuthority
 	final static int MAX = 999;
 	final static int MAXDL = 499;
 
+	private static int anzahlAmt = 0;
+	private static int id = 0;
+	private static int[] idFee = new int[MAX];
+	private static String[] licensePlateList = new String[MAX];
+	private static String[] ownerList = new String[MAX];
+	private static String[] addressList = new String[MAX];
+	private static String[][] feeList = new String[MAX][MAXDL];
+	private static String[][] pointsList = new String[MAX][MAXDL];
+
 	protected TransportAuthority()
 	{
 		++anzahlAmt;
@@ -120,12 +129,4 @@ public class TransportAuthority
 			return null;
 	}
 
-	private static int anzahlAmt = 0;
-	private static int id = 0;
-	private static int[] idFee = new int[MAX];
-	private static String[] licensePlateList = new String[MAX];
-	private static String[] ownerList = new String[MAX];
-	private static String[] addressList = new String[MAX];
-	private static String[][] feeList = new String[MAX][MAXDL];
-	private static String[][] pointsList = new String[MAX][MAXDL];
 }

@@ -11,6 +11,8 @@ import java.util.Random;
  */
 public class MeterMaid extends TransportAuthority
 {
+	private static String checkString;
+	private static int anzahlMaid = 0;
 
 	private MeterMaid()
 	{
@@ -67,6 +69,4 @@ public class MeterMaid extends TransportAuthority
 		System.out.println("Gesammt:\t" + totalPoints);
 	}
 
-	private static String checkString;
-	private static int anzahlMaid = 0;
 }
